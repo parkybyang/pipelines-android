@@ -1,18 +1,19 @@
 buildscript {
     repositories {
-        jcenter()
+        google() // Add this repository
+        jcenter() // Consider removing or placing after Google's Maven repository
+        mavenCentral() // Optionally, include Maven Central for a broader range of dependencies
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:7.3.2'
-
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
     }
 }
 
 allprojects {
     repositories {
-        jcenter()
+        google() // Add this repository
+        jcenter() // Consider removing or placing after Google's Maven repository
+        mavenCentral() // Optionally, include Maven Central for a broader range of dependencies
     }
 }
 
@@ -39,3 +40,4 @@ ext {
     rulesVersion = '0.5'
     espressoVersion = '2.2.2'
 }
+
